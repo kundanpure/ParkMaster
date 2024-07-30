@@ -1,0 +1,31 @@
+/* Base styles */
+:root {
+  --bg-color-light: white;
+  --text-color-light: black;
+  --bg-color-dark: #121212;
+  --text-color-dark: white;
+}
+
+/* Default theme is light */
+html.light {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+}
+
+/* Dark theme styles */
+html.dark {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Example link styles */
+a {
+  color: var(--text-color);
+}
